@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.mulish-mulish {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* shared styles  */
+.flex {
+    display: flex;
+}
+
+.maxwidth {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.tomato {
+    color: #FF5400;
+}
+
+.hidden {
+    display: none;
+}
+
+.primarybtn {
+    width: 174px;
+    border-radius: 8px;
+    border: none;
+    text-align: center;
+    padding: 16px;
+    color: #FFFFFF;
+    background-color: #FF5400;
+    font-size: 16px;
+}
+
+/* navbar styles  */
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+.logo {
+    align-items: center;
+}
+
+.logo img {
+    width: 3rem;
+    height: 3.2rem;
+}
+
+.logo h1 {
+    font-weight: bolder;
+    font-size: 2.1rem;
+    color: #131318;
+    margin-left: 1rem;
+}
+
+.logo h1 span {
+    color: #FF5400;
+}
+
+.navitems {
+    list-style: none;
+}
+
+.navitems li a {
+    text-decoration: none;
+}
+
+.navitems li .navlinks {
+
+    margin-left: 44px;
+    color: rgba(66, 66, 71, 1);
+}
+
+
+
+/* header styeles  */
+
+.headitems {
+    background-image: url("/images/Group\ 13\ \(1\)\ \(1\).png");
+    background-repeat: no-repeat;
+    height: 600px;
+    opacity: 100%;
+
+}
+
+.headcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    padding-top: 60px;
+
+}
+
+.headtitle {
+    font-weight: bolder;
+    font-size: 4rem;
+    color: #FFFFFF;
+    width: 596px;
+}
+
+.headdesc {
+    width: 676px;
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.form {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.form input,
+.form select {
+    width: 174px;
+    border-radius: 8px;
+    border: none;
+    padding: 16px 0px 16px 16px;
+    color: rgba(19, 19, 24, 0.5);
+    font-size: 16px;
+}
+
+
+
+@media screen and (max-width: 576px) {
+
+
+    .navitems,
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navitems {
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .navitems li .navlinks {
+        margin-left: 0px;
+    }
+}
