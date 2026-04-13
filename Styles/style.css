@@ -170,7 +170,167 @@
     padding-left: 15px;
 }
 
+/* destination section styles  */
 
+.destinationcontainer {
+    text-align: center;
+}
+
+.destinationtitle {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #131318;
+}
+
+.destinationdesc {
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgba(19, 19, 24, 0.7);
+    padding: 0 300px 0 300px;
+
+}
+
+#img1 {
+    grid-area: img1;
+    background-image: url("/Images/Rectangle 5.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no repeat;
+    padding-top: 132px;
+    padding-bottom: 132px;
+    width: 100%;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: bolder;
+    color: #FFFFFF;
+
+}
+
+#img2 {
+    grid-area: img2;
+    background-image: url("/Images/Rectangle 8.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no repeat;
+    padding-top: 132px;
+    padding-bottom: 132px;
+    width: 100%;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: bolder;
+    color: #FFFFFF;
+}
+
+#img3 {
+    grid-area: img3;
+    background-image: url("/Images/Rectangle 6.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no repeat;
+    padding-top: 132px;
+    padding-bottom: 132px;
+    width: 100%;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: bolder;
+    color: #FFFFFF;
+}
+
+#img4 {
+    grid-area: img4;
+    background-image: url("/Images/Rectangle 7.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no repeat;
+    padding-top: 132px;
+    padding-bottom: 132px;
+    width: 100%;
+    border-radius: 16px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: bolder;
+    color: #FFFFFF;
+}
+
+#img5 {
+    grid-area: img5;
+    background-image: url("/Images/Rectangle 9.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no repeat;
+    padding-top: 132px;
+    padding-bottom: 132px;
+    width: 100%;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: bolder;
+    color: #FFFFFF;
+}
+
+#img6 {
+    grid-area: img6;
+    background-image: url("/Images/Rectangle 11.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no repeat;
+    padding-top: 132px;
+    padding-bottom: 132px;
+    width: 100%;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: bolder;
+    color: #FFFFFF;
+}
+
+#img7 {
+    grid-area: img7;
+    background-image: url("/Images/Rectangle 10.png");
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no repeat;
+    padding-top: 132px;
+    padding-bottom: 132px;
+    width: 100%;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: bolder;
+    color: #FFFFFF;
+
+}
+
+.imgcontainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+    padding: 20px;
+    grid-template-areas:
+        "img1 img1 img2 img2"
+        "img3 img4 img4 img5"
+        "img6 img7 img7 img7";
+}
 
 
 
@@ -232,6 +392,10 @@
 
     }
 
+    .navbar {
+        margin: 0;
+    }
+
     .popular {
         max-width: 335px;
     }
@@ -266,7 +430,31 @@
     .navitems li .navlinks {
         margin-left: 0px;
     }
+
+    .destinationtitle {
+        font-size: 1.25rem;
+    }
+
+    .destinationdesc {
+        padding-left: 33px;
+        padding-right: 33px;
+        font-size: .9rem;
+    }
+
+    .imgcontainer {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+            "img1"
+            "img2"
+            "img3"
+            "img4"
+            "img5"
+            "img6"
+            "img7";
+
+    }
 }
+
 
 @media screen and (min-width: 576px) and (max-width:992px) {
     header {
@@ -314,6 +502,27 @@
 
     .popularimg img {
         width: 632px;
+
+    }
+
+
+
+    .destinationdesc {
+        padding-left: 33px;
+        padding-right: 33px;
+
+    }
+
+    .imgcontainer {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+            "img1"
+            "img2"
+            "img3"
+            "img4"
+            "img5"
+            "img6"
+            "img7";
 
     }
 }
