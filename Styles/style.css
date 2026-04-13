@@ -395,7 +395,104 @@
 
 }
 
+/* deals section styles */
+.dealscontainer {
+    text-align: center;
+}
+
+.dealtitle {
+    font-weight: bolder;
+    font-size: 2.5rem;
+    color: #131318;
+}
+
+.dealdesc {
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgba(19, 19, 24, 0.7);
+    padding-left: 263px;
+    padding-right: 264px;
+}
+
+.dealcard {
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1170px;
+    height: 500px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.dealcard:nth-child(odd) {
+    background-image: url("/Images/Group\ 39.png");
+
+    justify-content: left;
+
+}
+
+
+.dealcard:nth-child(even) {
+    background-image: url("/Images/Group\ 40.png");
+    justify-content: right;
+}
+
+.dcard {
+    background-color: rgba(255, 255, 255, .9);
+    width: 579px;
+    border-radius: 10px;
+    padding: 50px;
+    text-align: left;
+}
+
+.dealcard:nth-child(even)>.dcard {
+    margin-right: 56px;
+}
+
+.dealcard:nth-child(odd)>.dcard {
+    margin-left: 56px;
+}
+
+.discountheading span {
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgba(90, 90, 93, 1);
+    padding-left: 8px;
+    padding-right: 16px;
+}
+
+.discountheading i {
+    color: #FF5722;
+    font-size: 1rem;
+}
+
+.discountitle {
+    font-weight: bolder;
+    font-size: 1.5rem;
+    color: #131318;
+    padding-top: 5px;
+}
+
+.discountdesc {
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgba(90, 90, 93, 1);
+    padding-right: 80px;
+}
+
+.discountprice {
+    font-weight: bolder;
+    font-size: 1.25rem;
+    color: rgba(255, 84, 0, 1);
+}
+
+.dealsbutton {
+    margin-top: 48px;
+}
+
 @media screen and (max-width: 576px) {
+
 
     header,
     section {
@@ -530,6 +627,47 @@
         justify-self: left;
         max-width: 100%;
     }
+
+    .dealdesc {
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+
+    .dealcard {
+        width: 335px;
+        height: 500px;
+        justify-content: center;
+        align-items: end;
+        justify-self: center;
+    }
+
+    .dealcard:nth-child(odd)>.dcard {
+        margin-left: 16px;
+    }
+
+    .dealcard:nth-child(even)>.dcard {
+        margin-right: 16px;
+    }
+
+    .dcard {
+        width: 288px;
+        height: 297px;
+        padding: 24px;
+        margin: 16px 16px 16px 16px;
+    }
+
+    .discountheading {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+
+
+    .discountdesc {
+
+        padding: 0px;
+    }
+
 }
 
 
@@ -615,5 +753,45 @@
     .choosedesc {
         padding-left: 26px;
         padding-right: 26px;
+    }
+
+    .dealdesc {
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+
+    .dealcard {
+        width: 634px;
+        height: 500px;
+        justify-content: center;
+        align-items: end;
+        justify-self: center;
+    }
+
+    .dealcard:nth-child(odd)>.dcard {
+        margin-left: 16px;
+    }
+
+    .dealcard:nth-child(even)>.dcard {
+        margin-right: 16px;
+    }
+
+    .dcard {
+        width: 288px;
+        height: 297px;
+        padding: 24px;
+        margin: 16px 16px 16px 16px;
+    }
+
+    .discountheading {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+
+
+    .discountdesc {
+
+        padding: 0px;
     }
 }
