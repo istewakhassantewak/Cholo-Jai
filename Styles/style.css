@@ -491,6 +491,141 @@
     margin-top: 48px;
 }
 
+
+
+/* Simple Section styles */
+.simple {
+    display: flex;
+    padding-top: 100px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.simpleimage img {
+    width: 610px;
+    height: 424px;
+}
+
+.simpletitle {
+    font-weight: bolder;
+    font-size: 2.5rem;
+    color: #131318;
+}
+
+.simpledesc,
+.simpletexts ul li {
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgba(90, 90, 93, 1);
+    padding-right: 28px;
+}
+
+.simpletexts ul {
+    padding-left: 15px;
+}
+
+.simpletexts ul li {
+    color: #131318;
+    font-weight: bold;
+    padding-bottom: 16px;
+}
+
+/* news Section styles */
+.news {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.newstexts {
+    border: 1px solid #FF5400;
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 1);
+    width: 474px;
+    height: 422px;
+}
+
+.newstext {
+    padding: 40px;
+}
+
+.newstitle {
+    font-weight: bolder;
+    font-size: 1.5rem;
+    color: #131318;
+}
+
+.newsdesc {
+    font-weight: 400;
+    font-size: 1rem;
+    padding-right: 84px;
+    color: rgba(90, 90, 93, 1);
+}
+
+.newshr {
+    color: rgba(90, 90, 93, 1);
+    width: 393px;
+    margin-bottom: 16px;
+}
+
+.newstext input {
+    width: 361px;
+    padding: 16px;
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgba(19, 19, 24, 0.3);
+    border-radius: 16px;
+    border: none;
+    background-color: rgba(19, 19, 24, 0.05);
+    margin-bottom: 16px;
+}
+
+.newsbtn {
+    width: 100%;
+    border-radius: 8px;
+    font-weight: bolder;
+}
+
+.newsimage {
+    background-image: url("/Images/Rectangle 8 (1).png");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.te {
+    border: none;
+    border-radius: 16px;
+    background-color: #FF5400;
+    width: 324px;
+    height: 120px;
+    text-align: center;
+    color: #FFFFFF;
+    transform: rotate(-45deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 91px;
+    right: -12px;
+}
+
+
+
+.te2 p {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.te2 h3 {
+    font-weight: bolder;
+    font-size: 2rem;
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
 @media screen and (max-width: 576px) {
 
 
@@ -668,6 +803,68 @@
         padding: 0px;
     }
 
+    .simple {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .simpleimage img {
+        width: 335px;
+        height: 200px;
+
+    }
+
+    .simpleimage {
+        margin-top: 24px;
+    }
+
+    .news {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .newsimage {
+
+        position: static;
+        width: 335px;
+        height: 300px;
+    }
+
+    .te {
+        position: relative;
+        bottom: -164px;
+        right: -130px;
+        width: 214px;
+        height: 79px;
+    }
+
+    .te2 {
+        height: 49px;
+    }
+
+    .te2 p {
+        font-size: 1rem;
+        margin-top: 5px;
+        margin-bottom: 7px;
+    }
+
+
+    .te2 h3 {
+        font-size: 1.25rem;
+        margin: 0;
+    }
+
+    .newstexts {
+        width: 335px;
+    }
+
+    .newshr,
+    .newstext input {
+        width: 220px;
+    }
 }
 
 
@@ -794,4 +991,72 @@
 
         padding: 0px;
     }
+
+    .simple {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .simpleimage img {
+        width: 634px;
+        height: 400px;
+
+    }
+
+    .simpleimage {
+        margin-top: 24px;
+    }
+
+    .news {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .newsimage {
+
+
+        width: 634px;
+        height: 300px;
+    }
+
+    .te {
+        bottom: 56px;
+        width: 214px;
+        height: 79px;
+    }
+
+    .te2 {
+        height: 49px;
+    }
+
+    .newshr {
+        margin-left: 0;
+        margin-right: 0;
+        width: 543px;
+    }
+
+    .newstext input {
+        width: 520px;
+    }
+
+    .te2 p {
+        font-size: 1rem;
+        margin-top: 5px;
+        margin-bottom: 7px;
+    }
+
+
+    .te2 h3 {
+        font-size: 1.25rem;
+        margin: 0;
+    }
+
+    .newstexts {
+        width: 635px;
+    }
+
+
 }
