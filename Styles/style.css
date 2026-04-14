@@ -2,10 +2,26 @@
 
 
 
-.mulish-mulish {
+.mulish {
     font-family: "Mulish", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 section,
@@ -13,7 +29,7 @@ header,
 main {
     max-width: 1170px;
     margin: 0 auto;
-    width: 1170px;
+    width: min(1170px, 92%);
 }
 
 /* shared styles  */
@@ -41,6 +57,18 @@ main {
     color: #FFFFFF;
     background-color: #FF5400;
     font-size: 16px;
+    cursor: pointer;
+    transition: transform .25s ease, box-shadow .25s ease, background-color .25s ease;
+}
+
+.primarybtn:hover {
+    background-color: #e54d00;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(255, 84, 0, .25);
+}
+
+.primarybtn:active {
+    transform: translateY(0);
 }
 
 /* navbar styles  */
@@ -70,12 +98,27 @@ main {
     color: #FF5400;
 }
 
+.logotext {
+    color: inherit;
+    text-decoration: none;
+}
+
+.logolink {
+    border-radius: 10px;
+    transition: transform .25s ease;
+}
+
+.logolink:hover {
+    transform: scale(1.05);
+}
+
 .navitems {
     list-style: none;
 }
 
 .navitems li a {
     text-decoration: none;
+    transition: color .25s ease;
 }
 
 .navitems li .navlinks {
@@ -84,13 +127,19 @@ main {
     color: rgba(66, 66, 71, 1);
 }
 
+.navitems li a:hover {
+    color: #FF5400;
+}
+
 
 
 /* header styeles  */
 
 .headitems {
-    background-image: url("/images/Group\ 13\ \(1\)\ \(1\).png");
+    background-image: linear-gradient(rgba(19, 19, 24, 0.45), rgba(19, 19, 24, 0.2)), url("../Images/Group 13 (1) (1).png");
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     height: 600px;
     opacity: 1;
     border-radius: 10px;
@@ -149,6 +198,8 @@ main {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 100px;
+    gap: 24px;
+    margin-top: 100px;
 }
 
 .populartitle {
@@ -166,7 +217,7 @@ main {
 
 .popular {
     max-width: 577px;
-    margin-left: 24px;
+    margin-left: 0;
 }
 
 .popularbtn {
@@ -194,16 +245,16 @@ main {
     font-weight: 400;
     font-size: 1rem;
     color: rgba(19, 19, 24, 0.7);
-    padding: 0 300px 0 300px;
+    padding: 0 12%;
 
 }
 
 #img1 {
     grid-area: img1;
-    background-image: url("/Images/Rectangle 5.png");
+    background-image: linear-gradient(rgba(19, 19, 24, 0.25), rgba(19, 19, 24, 0.25)), url("../Images/Rectangle 5.png");
     background-size: cover;
     background-position: center;
-    background-repeat: no repeat;
+    background-repeat: no-repeat;
     padding-top: 132px;
     padding-bottom: 132px;
     width: 100%;
@@ -219,10 +270,10 @@ main {
 
 #img2 {
     grid-area: img2;
-    background-image: url("/Images/Rectangle 8.png");
+    background-image: linear-gradient(rgba(19, 19, 24, 0.25), rgba(19, 19, 24, 0.25)), url("../Images/Rectangle 8.png");
     background-size: cover;
     background-position: center;
-    background-repeat: no repeat;
+    background-repeat: no-repeat;
     padding-top: 132px;
     padding-bottom: 132px;
     width: 100%;
@@ -237,10 +288,10 @@ main {
 
 #img3 {
     grid-area: img3;
-    background-image: url("/Images/Rectangle 6.png");
+    background-image: linear-gradient(rgba(19, 19, 24, 0.25), rgba(19, 19, 24, 0.25)), url("../Images/Rectangle 6.png");
     background-size: cover;
     background-position: center;
-    background-repeat: no repeat;
+    background-repeat: no-repeat;
     padding-top: 132px;
     padding-bottom: 132px;
     width: 100%;
@@ -255,10 +306,10 @@ main {
 
 #img4 {
     grid-area: img4;
-    background-image: url("/Images/Rectangle 7.png");
+    background-image: linear-gradient(rgba(19, 19, 24, 0.25), rgba(19, 19, 24, 0.25)), url("../Images/Rectangle 7.png");
     background-size: cover;
     background-position: center;
-    background-repeat: no repeat;
+    background-repeat: no-repeat;
     padding-top: 132px;
     padding-bottom: 132px;
     width: 100%;
@@ -274,10 +325,10 @@ main {
 
 #img5 {
     grid-area: img5;
-    background-image: url("/Images/Rectangle 9.png");
+    background-image: linear-gradient(rgba(19, 19, 24, 0.25), rgba(19, 19, 24, 0.25)), url("../Images/Rectangle 9.png");
     background-size: cover;
     background-position: center;
-    background-repeat: no repeat;
+    background-repeat: no-repeat;
     padding-top: 132px;
     padding-bottom: 132px;
     width: 100%;
@@ -292,10 +343,10 @@ main {
 
 #img6 {
     grid-area: img6;
-    background-image: url("/Images/Rectangle 11.png");
+    background-image: linear-gradient(rgba(19, 19, 24, 0.25), rgba(19, 19, 24, 0.25)), url("../Images/Rectangle 11.png");
     background-size: cover;
     background-position: center;
-    background-repeat: no repeat;
+    background-repeat: no-repeat;
     padding-top: 132px;
     padding-bottom: 132px;
     width: 100%;
@@ -310,11 +361,11 @@ main {
 
 #img7 {
     grid-area: img7;
-    background-image: url("/Images/Rectangle 10.png");
+    background-image: linear-gradient(rgba(19, 19, 24, 0.25), rgba(19, 19, 24, 0.25)), url("../Images/Rectangle 10.png");
     background-position: center;
     background-size: cover;
     background-position: center;
-    background-repeat: no repeat;
+    background-repeat: no-repeat;
     padding-top: 132px;
     padding-bottom: 132px;
     width: 100%;
@@ -326,6 +377,27 @@ main {
     font-weight: bolder;
     color: #FFFFFF;
 
+}
+
+#img1,
+#img2,
+#img3,
+#img4,
+#img5,
+#img6,
+#img7 {
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+#img1:hover,
+#img2:hover,
+#img3:hover,
+#img4:hover,
+#img5:hover,
+#img6:hover,
+#img7:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(19, 19, 24, .2);
 }
 
 .imgcontainer {
@@ -354,8 +426,8 @@ main {
 .choosedesc {
     font-weight: 400;
     font-size: 1rem;
-    padding-left: 263px;
-    padding-right: 263px;
+    padding-left: 12%;
+    padding-right: 12%;
     color: rgba(19, 19, 24, 0.7);
 }
 
@@ -372,6 +444,12 @@ main {
     padding: 32px 55px 32px 32px;
     background-color: rgba(251, 181, 99, 0.05);
     border-radius: 10px;
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 30px rgba(19, 19, 24, .12);
 }
 
 .card:nth-child(2) {
@@ -405,7 +483,7 @@ main {
 /* deals section styles */
 .dealscontainer {
     text-align: center;
-    width: 1170px;
+    width: 100%;
 }
 
 .dealtitle {
@@ -418,14 +496,14 @@ main {
     font-weight: 400;
     font-size: 1rem;
     color: rgba(19, 19, 24, 0.7);
-    padding-left: 263px;
-    padding-right: 264px;
+    padding-left: 12%;
+    padding-right: 12%;
 }
 
 .dealcard {
     background-repeat: no-repeat;
     background-position: center;
-    width: 1170px;
+    width: 100%;
     height: 500px;
     border-radius: 10px;
     display: flex;
@@ -434,7 +512,7 @@ main {
 }
 
 .dealcard:nth-child(odd) {
-    background-image: url("/Images/Group\ 39.png");
+    background-image: linear-gradient(rgba(19, 19, 24, 0.12), rgba(19, 19, 24, 0.12)), url("../Images/Group 39.png");
 
     justify-content: left;
 
@@ -442,7 +520,7 @@ main {
 
 
 .dealcard:nth-child(even) {
-    background-image: url("/Images/Group\ 40.png");
+    background-image: linear-gradient(rgba(19, 19, 24, 0.12), rgba(19, 19, 24, 0.12)), url("../Images/Group 40.png");
     justify-content: right;
 }
 
@@ -466,13 +544,21 @@ main {
     font-weight: 400;
     font-size: 1rem;
     color: rgba(90, 90, 93, 1);
-    padding-left: 8px;
-    padding-right: 16px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .discountheading i {
     color: #FF5722;
     font-size: 1rem;
+}
+
+.discountheading {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px 12px;
+    margin-bottom: 8px;
 }
 
 .discountitle {
@@ -512,7 +598,10 @@ main {
 
 .simpleimage img {
     width: 610px;
-    height: 424px;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
 }
 
 .simpletitle {
@@ -552,8 +641,9 @@ main {
     border: 1px solid #FF5400;
     border-radius: 16px;
     background-color: rgba(255, 255, 255, 1);
-    width: 474px;
-    height: 422px;
+    width: 100%;
+    max-width: 474px;
+    min-height: 422px;
 }
 
 .newstext {
@@ -575,12 +665,12 @@ main {
 
 .newshr {
     color: rgba(90, 90, 93, 1);
-    width: 393px;
+    width: 100%;
     margin-bottom: 16px;
 }
 
 .newstext input {
-    width: 361px;
+    width: 100%;
     padding: 16px;
     font-weight: 400;
     font-size: 1rem;
@@ -598,10 +688,13 @@ main {
 }
 
 .newsimage {
-    background-image: url("/Images/Rectangle 8 (1).png");
+    background-image: linear-gradient(rgba(19, 19, 24, 0.08), rgba(19, 19, 24, 0.08)), url("../Images/Rectangle 8 (1).png");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     position: relative;
+    border-radius: 16px;
+    min-height: 300px;
 }
 
 .te {
@@ -658,7 +751,8 @@ footer {
     font-size: 1rem;
     font-weight: 400;
     color: rgba(90, 90, 93, 1);
-    width: 769px;
+    max-width: 769px;
+    width: 100%;
 }
 
 .footercontainer ul {
@@ -680,6 +774,13 @@ footer {
 
 .footercontainer ul li a {
     color: black;
+    transition: color .25s ease, transform .25s ease;
+    display: inline-block;
+}
+
+.footercontainer ul li a:hover {
+    color: #FF5400;
+    transform: translateY(-2px);
 }
 
 .footercontainer hr {
@@ -763,6 +864,7 @@ footer {
 
     .popularcontainer {
         flex-direction: column;
+
     }
 
     .popularbtn {
@@ -836,8 +938,9 @@ footer {
     }
 
     .dealcard {
-        width: 335px;
-        height: 500px;
+        width: 100%;
+        min-height: 500px;
+        height: auto;
         justify-content: center;
         align-items: end;
         justify-self: center;
@@ -852,8 +955,10 @@ footer {
     }
 
     .dcard {
-        width: 288px;
-        height: 297px;
+        width: calc(100% - 32px);
+        max-width: 360px;
+        min-height: 297px;
+        height: auto;
         padding: 24px;
         margin: 16px 16px 16px 16px;
     }
@@ -894,9 +999,8 @@ footer {
     }
 
     .newsimage {
-
         position: static;
-        width: 335px;
+        width: 100%;
         height: 300px;
     }
 
@@ -925,12 +1029,12 @@ footer {
     }
 
     .newstexts {
-        width: 335px;
+        width: 100%;
     }
 
     .newshr,
     .newstext input {
-        width: 220px;
+        width: 100%;
     }
 
     footer {
@@ -1030,8 +1134,9 @@ footer {
     }
 
     .dealcard {
-        width: 635px;
-        height: 500px;
+        width: 100%;
+        min-height: 500px;
+        height: auto;
         justify-content: center;
         align-items: end;
         justify-self: center;
@@ -1046,8 +1151,10 @@ footer {
     }
 
     .dcard {
-        width: 288px;
-        height: 297px;
+        width: calc(100% - 32px);
+        max-width: 540px;
+        min-height: 297px;
+        height: auto;
         padding: 24px;
         margin: 16px 16px 16px 16px;
     }
@@ -1107,11 +1214,11 @@ footer {
     .newshr {
         margin-left: 0;
         margin-right: 0;
-        width: 543px;
+        width: 100%;
     }
 
     .newstext input {
-        width: 520px;
+        width: 100%;
     }
 
     .te2 p {
@@ -1127,7 +1234,8 @@ footer {
     }
 
     .newstexts {
-        width: 634px;
+        width: 100%;
+        max-width: 634px;
     }
 
 

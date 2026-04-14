@@ -11,32 +11,32 @@
 </head>
 
 <body class="mulish">
-    <header class="maxwidth">
+    <header class="maxwidth" id="home">
         <nav class="navbar flex">
             <div>
                 <div class="logo flex">
-                    <img src="Images/Group 40071 (2).png" alt="">
-                    <h1>Cholo<span> Jai</span></h1>
+                    <a href="./index.html" aria-label="Go to homepage" class="logolink">
+                        <img src="Images/Group 40071 (2).png" alt="Cholo Jai logo">
+                    </a>
+                    <h1><a href="./index.html" class="logotext">Cholo<span> Jai</span></a></h1>
                 </div>
             </div>
             <ul class="navitems flex">
-                <li><a href="" class="tomato headlink">Home</a></li>
-                <li><a href="" class="navlinks">Packages</a></li>
-                <li><a href="" class="navlinks">Testimonial</a></li>
-                <li><a href="" class="navlinks">Blog</a></li>
-                <li><a href="" class="navlinks">Contact</a></li>
+                <li><a href="#home" class="tomato headlink">Home</a></li>
+                <li><a href="#deals" class="navlinks">Packages</a></li>
+                <li><a href="#choose" class="navlinks">Why Us</a></li>
+                <li><a href="#destination" class="navlinks">Destinations</a></li>
+                <li><a href="#newsletter" class="navlinks">Contact</a></li>
             </ul>
         </nav>
         <div class="headitems">
             <div class="headcontainer">
-                <h1 class="headtitle">Explore Your Travel</h1>
-                <p class="headdesc">Dolor sit amet consectetur. Nullam suspendisse vitae ultricies dolor adipiscing. In
-                    et
-                    odio enim ac quis sapien urna eu
-                    phasellus.</p>
+                <h1 class="headtitle">Explore Your Next Adventure</h1>
+                <p class="headdesc">Discover handpicked destinations, flexible tour plans, and memorable experiences
+                    designed for families, friends, and solo travelers.</p>
                 <div class="form">
 
-                    <input type="text" id="where" class="where" placeholder="Where Go">
+                    <input type="text" id="where" class="where" placeholder="Where to?">
                     <select name="when" id="when" aria-label="Select travel time">
                         <option value="" disabled selected hidden>When</option>
                         <option value="Morning">Morning</option>
@@ -49,7 +49,7 @@
                         <option value="Evening">Friends</option>
                         <option value="Night">Couple</option>
                     </select>
-                    <button type="button" class="primarybtn"><i class="fa fa-search"></i> Find Now</button>
+                    <button type="button" class="primarybtn"><i class="fa fa-search"></i> Find Tours</button>
                 </div>
             </div>
         </div>
@@ -58,31 +58,25 @@
         <section class="popularcontainer">
             <div class="popular">
                 <h2 class="populartitle">Our Popular Tours</h2>
-                <p class="populardesc">Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit
-                    massa. Sodales dictumst nec nibh
-                    pellentesque.</p>
+                <p class="populardesc">Our most popular tours combine comfort, local culture, and stunning views at a
+                    great value.</p>
                 <ul>
-                    <li>Tempus euismod lacus mauris dignissim quis in ultrices. Magna nullam odio neque diam. Sociis
-                        erat at .</li>
-                    <li>Adipiscing ornare pellentesque mauris volutpat tortor vitae platea porta lacus. Lectus
-                        suspendisse nullam.</li>
-                    <li>Accumsan eget et turpis praesent lorem egestas enim elit bibendum. Risus at in.</li>
+                    <li>Well-planned itineraries that balance sightseeing, relaxation, and local experiences.</li>
+                    <li>Experienced guides and dependable support throughout the entire journey.</li>
+                    <li>Transparent pricing with no hidden fees, so you can travel with confidence.</li>
                 </ul>
-                <p class="populardesc">Amet consectetur. Vulputate commodo felis molestie risus
-                    ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus
-                    natoque aliquet. Id
-                    bibendum nunc senectus semper tincidunt.</p>
+                <p class="populardesc">Whether you prefer mountains, beaches, or vibrant cities, we help you choose
+                    the right package for your time and budget.</p>
                 <button class="primarybtn popularbtn">Read More</button>
             </div>
             <div class="popularimg">
                 <img src="Images/Rectangle 4.png" alt="">
             </div>
         </section>
-        <section class="destinationcontainer">
+        <section class="destinationcontainer" id="destination">
             <h2 class="destinationtitle">Choose Your Destination</h2>
-            <p class="destinationdesc">Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit
-                massa. Sodales dictumst nec nibh
-                pellentesque.</p>
+            <p class="destinationdesc">Choose from breathtaking destinations across Asia and beyond, each selected for
+                unforgettable travel moments.</p>
             <div class="imgcontainer">
                 <div id="img1">Maldives</div>
                 <div id="img2">Indonesia</div>
@@ -93,44 +87,39 @@
                 <div id="img7">Bandarban</div>
             </div>
         </section>
-        <section class="Choosecontainer">
+        <section class="Choosecontainer" id="choose">
             <h1 class="choosetitle">
                 Why Choose Us
             </h1>
             <p class="choosedesc">
-                Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. Sodales dictumst nec
-                nibh
-                pellentesque.
+                We focus on quality service, trusted planning, and affordable packages so your journey feels smooth
+                from start to finish.
             </p>
             <div class="choosecards">
                 <div class="card">
                     <img src="Images/hostel.png" alt="" class="cardlogo">
                     <h3 class="cardtitle">Handpicked</h3>
-                    <p class="carddesc">Amet consectetur. Vulputate commodo felis molestie risus ornare nulla amet et.
-                        Libero commodo sagittis dignissim
-                        adipiscing quis. Habitant adipiscing risus natoque aliquet.</p>
+                    <p class="carddesc">Every destination and hotel is selected for comfort, safety, and memorable
+                        experiences.</p>
                 </div>
                 <div class="card">
                     <img src="Images/map.png" alt="" class="cardlogo">
                     <h3 class="carttitle">World Class Service</h3>
-                    <p class="carddesc">Amet consectetur. Vulputate commodo felis molestie risus ornare nulla amet et.
-                        Libero commodo sagittis dignissim
-                        adipiscing quis. Habitant adipiscing risus natoque aliquet.</p>
+                    <p class="carddesc">Our support team is ready to assist before, during, and after your trip for a
+                        stress-free experience.</p>
                 </div>
                 <div class="card">
                     <img src="Images/tag.png" alt="" class="cardlogo">
                     <h3 class="carttitle">Best Price Guarantee</h3>
-                    <p class="carddesc">Amet consectetur. Vulputate commodo felis molestie risus ornare nulla amet et.
-                        Libero commodo sagittis dignissim
-                        adipiscing quis. Habitant adipiscing risus natoque aliquet.</p>
+                    <p class="carddesc">Get competitive prices with quality stays and activities included in every
+                        package.</p>
                 </div>
             </div>
         </section>
-        <section class="dealscontainer">
+        <section class="dealscontainer" id="deals">
             <h1 class="dealtitle">Deals & Discounts</h1>
-            <p class="dealdesc">Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa.
-                Sodales dictumst nec nibh
-                pellentesque.</p>
+            <p class="dealdesc">Save more on seasonal tour offers designed to give you premium experiences at reduced
+                prices.</p>
             <div class="dealcards">
 
                 <div class="dealcard">
@@ -141,10 +130,8 @@
                                 class="fa-solid fa-location-dot icon-orange"></i><span> Malaysia</span>
                         </p>
                         <h2 class="discountitle">Tour To Satorini</h2>
-                        <p class="discountdesc">Amet consectetur. Vulputate commodo felis
-                            molestie risus ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis.
-                            Habitant
-                            adipiscing.</p>
+                        <p class="discountdesc">Enjoy scenic coastlines, relaxing island stays, and guided tours
+                            through iconic landmarks.</p>
                         <p class="discountprice">Price: $1300-$1500</p>
                         <button class="primarybtn">Book Now</button>
                     </div>
@@ -157,10 +144,8 @@
                                 class="fa-solid fa-location-dot icon-orange"></i><span> Malaysia</span>
                         </p>
                         <h2 class="discountitle">Tour To Satorini</h2>
-                        <p class="discountdesc">Amet consectetur. Vulputate commodo felis
-                            molestie risus ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis.
-                            Habitant
-                            adipiscing.</p>
+                        <p class="discountdesc">Perfect for couples and families looking for culture, comfort, and
+                            unforgettable sunset views.</p>
                         <p class="discountprice">Price: $1300-$1500</p>
                         <button class="primarybtn">Book Now</button>
                     </div>
@@ -173,28 +158,23 @@
                                 class="fa-solid fa-location-dot icon-orange"></i><span> Malaysia</span>
                         </p>
                         <h2 class="discountitle">Tour To Satorini</h2>
-                        <p class="discountdesc">Amet consectetur. Vulputate commodo felis
-                            molestie risus ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis.
-                            Habitant
-                            adipiscing.</p>
+                        <p class="discountdesc">A complete package with hotel, transport, and guided activities for a
+                            hassle-free holiday.</p>
                         <p class="discountprice">Price: $1300-$1500</p>
                         <button class="primarybtn">Book Now</button>
                     </div>
                 </div>
-                <button class="primarybtn dealsbutton">See All packages</button>
+                <button class="primarybtn dealsbutton">See All Packages</button>
             </div>
         </section>
         <section class="simple">
             <div class="simpletexts">
                 <h1 class="simpletitle">A Simple Perfect Place To Get Lost</h1>
-                <p class="simpledesc">Amet consectetur. Vulputate commodo felis molestie risus ornare nulla amet et.
-                    Libero commodo sagittis dignissim
-                    adipiscing quis.</p>
+                <p class="simpledesc">Step away from routine and explore places that make every moment feel fresh and
+                    inspiring.</p>
                 <ul>
-                    <li>Adipiscing ornare pellentesque mauris volutpat tortor vitae platea porta lacus. Lectus
-                        suspendisse nullam.</li>
-                    <li>Adipiscing ornare pellentesque mauris volutpat tortor vitae platea porta lacus. Lectus
-                        suspendisse nullam.</li>
+                    <li>Beautiful routes with scenic viewpoints and thoughtfully planned daily activities.</li>
+                    <li>Comfortable accommodations and local food experiences throughout the trip.</li>
                 </ul>
                 <button class="primarybtn">See More</button>
             </div>
@@ -202,14 +182,14 @@
                 <img src="Images/Group 40089.png" alt="">
             </div>
         </section>
-        <section class="news">
+        <section class="news" id="newsletter">
             <div class="newstexts">
                 <div class="newstext">
                     <h2 class="newstitle">Newsletter</h2>
-                    <p class="newsdesc">Get your daily dose of travel news & tips. Sign up today!</p>
+                    <p class="newsdesc">Get weekly travel updates, destination ideas, and exclusive offers.</p>
                     <hr class="newshr">
-                    <input type="text" class="name" placeholder="Enter your name"><br>
-                    <input type="text" class="email" placeholder="Enter your email"><br>
+                    <input type="text" class="name" placeholder="Your full name"><br>
+                    <input type="text" class="email" placeholder="Your email address"><br>
                     <button class="primarybtn newsbtn">Subscribe</button>
                 </div>
             </div>
@@ -226,13 +206,14 @@
     <footer>
         <div class="footercontainer">
             <div class="logo flex">
-                <img src="Images/Group 40071 (2).png" alt="">
-                <h1>Cholo<span> Jai</span></h1>
+                <a href="./index.html" aria-label="Go to homepage" class="logolink">
+                    <img src="Images/Group 40071 (2).png" alt="Cholo Jai logo">
+                </a>
+                <h1><a href="./index.html" class="logotext">Cholo<span> Jai</span></a></h1>
             </div>
             <p class="footerdesc">
-                Lorem ipsum dolor sit amet consectetur. Nulla sit viverra morbi vitae blandit orci potenti vulputate.
-                Leo erat maecenas
-                vitae elementum ultricies nullam.
+                Cholo Jai helps travelers discover great destinations with reliable planning, friendly support, and
+                affordable packages.
             </p>
             <div class="social">
                 <ul class="social-links">
@@ -243,7 +224,7 @@
                 </ul>
             </div>
             <hr>
-            <p class="copyright">2017, All RIghts Reserved</p>
+            <p class="copyright">2026, All Rights Reserved</p>
         </div>
     </footer>
 </body>
